@@ -11,10 +11,10 @@ define(['./scripts/Creator'], function(DataCreator) {
 
             switch (ui.item.value) {
                 case "0":
-                    file = "doc_small.json";
+                    file = "data/doc_small.json";
                     break;
                 case "1":
-                    file = "doc_big.json";
+                    file = "data/doc_big.json";
                     break;
                 default:
                     return;
@@ -29,7 +29,7 @@ define(['./scripts/Creator'], function(DataCreator) {
                     }/*,
                     kml: {
                         file: file,
-                        name: "myKml"
+                        name: "data/doc_small.kml"
                     }*/
                 },
                 slider: {
