@@ -1,2 +1,3 @@
-# GeoJson_NASA_WebWorldWind
+# GeoJson Implementation NASA WebWorldWind
+
 Sample application implementing GeoJson feature in Nasa Web World Wind
