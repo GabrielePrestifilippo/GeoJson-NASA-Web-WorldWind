@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="thirdparty/bootstrap.min.css">
+    <link rel="stylesheet" href="thirdparty/jquery-ui.css">
+
+    <script src="thirdparty/jquery.js"></script>
+    <script src="thirdparty/bootstrap.min.js"></script>
+    <script src="thirdparty/jquery-ui.js"></script>
+    <script data-main="app" src="thirdparty/require.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div>
+                <h2>GeoJSON implementation</h2>
+                <br>
+                <br>
+                <span>Select a format to start</span>
+            </div>
+            <div class="col-sm-3">
+                <br>
+                <br>
+                <div style="background-color: #ededed; margin-bottom:10px; padding: 20px;">
+
+                    <select style="width:150px" name="format" id="format">
+                        <option value="">Format:</option>
+                        <option value=0>GeoJson small</option>
+                        <option value=1>GeoJson BIG</option>
+                    </select>
+
+                    <p id="Z">Time: <span id="ZSpan">0</span></p>
+
+                    <div id="sliderZ" class="my-slider"></div>
+                </div>
+                <br>
+                <br>
+                <span>Outgoing call:</span>
+                <br><br>
+                <div id="min"></div>
+                <div style="width:40px;height:150px;background: -moz-linear-gradient(top, #ff0000 0%, #ffff00 50%, #00ff00 100%);
+background: -webkit-linear-gradient(top, #ff0000 0%,#ffff00 50%,#00ff00 100%);background: linear-gradient(to bottom, #ff0000 0%,#ffff00 50%,#00ff00 100%);"></div>
+                <div id="max"></div>
+            </div>
+            <div class="col-sm-9" id="globe">
+                <canvas id="canvasOne" width="1000" height="1000" style="width: 100%; height: auto">
+                    Your browser does not support HTML5 Canvas.
+                </canvas>
+            </div>
+
+
+            <div class="row" id="treeControls"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
